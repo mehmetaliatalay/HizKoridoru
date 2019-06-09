@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hız Koridoru</string>
+    <string name="kalan_sure">Kalan Süre:</string>
+    <string name="surus_detay">Sürüş Detay</string>
+    <string name="arac_tipi">Araç Tipi:</string>
+    <string name="arac_hiz_limiti">Araç Hız Limiti:</string>
+    <string name="otoyol">Otoyol:</string>
+    <string name="giris_gise">Giriş Gişe:</string>
+    <string name="cikis_gise">Çıkış Gişe:</string>
+    <string name="mesafe">Mesafe:</string>
+    <string name="fiyat">Fiyat:</string>
+    <string name="baslat">Başlat</string>
+    <string name="channel_name">My Channel</string>
+    <string name="channel_description">My Channel Description</string>
+    <string name="btn_koridoru_sorgula">Koridoru Sorgula</string>
+</resources>

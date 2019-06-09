@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteY="25dp">
+
+        <include
+            android:id="@+id/toolbarMain"
+            layout="@layout/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/aracSpinner"
+            layout="@layout/spinner"
+            android:layout_width="0dp"
+            android:layout_height="?attr/dropdownListPreferredItemHeight"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_Arac"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarMain" />
+
+        <include
+            android:id="@+id/otoyolSpinner"
+            layout="@layout/spinner"
+            android:layout_width="0dp"
+            android:layout_height="?attr/dropdownListPreferredItemHeight"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_Otoyol"
+            app:layout_constraintTop_toBottomOf="@+id/aracSpinner" />
+
+        <include
+            android:id="@+id/girisSpinner"
+            layout="@layout/spinner"
+            android:layout_width="0dp"
+            android:layout_height="?attr/dropdownListPreferredItemHeight"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_Giris"
+            app:layout_constraintTop_toBottomOf="@+id/otoyolSpinner" />
+
+        <include
+            android:id="@+id/cikisSpinner"
+            layout="@layout/spinner"
+            android:layout_width="0dp"
+            android:layout_height="?attr/dropdownListPreferredItemHeight"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_Cikis"
+            app:layout_constraintTop_toBottomOf="@+id/girisSpinner" />
+
+        <TextView
+            android:id="@+id/txt_Arac"
+            android:layout_width="57dp"
+            android:layout_height="48dip"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="\nAraç :"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarMain" />
+
+        <TextView
+            android:id="@+id/txt_Otoyol"
+            android:layout_width="57dp"
+            android:layout_height="48dip"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="\nOtoyol :"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Arac" />
+
+        <TextView
+            android:id="@+id/txt_Giris"
+            android:layout_width="57dp"
+            android:layout_height="48dip"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="\nGiriş :"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Otoyol" />
+
+        <TextView
+            android:id="@+id/txt_Cikis"
+            android:layout_width="57dp"
+            android:layout_height="48dip"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="\nÇıkış :"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Giris" />
+
+        <Button
+            android:id="@+id/hesaplaButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/btn_koridoru_sorgula"
+            android:textColor="@color/buttonTextColor"
+            android:background="@drawable/button_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cikisSpinner" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

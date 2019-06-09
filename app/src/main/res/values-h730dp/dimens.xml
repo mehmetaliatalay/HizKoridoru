@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="magin_top">11dp</dimen>
+    <dimen name="text_size">17sp</dimen>
+    <dimen name="button_Side_Margin">24dp</dimen>
+    <dimen name="button_Bottom_Margin">16dp</dimen>
+    <dimen name="speedview_Side_Margin">40dp</dimen>
+
+</resources>
